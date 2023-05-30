@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ejercicios.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Ejercicios HTML, JS Y CSS</title>
+    <h1 class="letra">Bienvenidos a los ejercicios de desarollo en HTML,JS Y css</h1>
+</head>
+<body>
+  <div class="container text-center" id="conte">
+    <div class="row row-cols-2 row-cols-lg-5 g-3 g-lg-4">
+      <div class="col1">
+        <h1>Ejercicio#1</h1>
+        <h7>•	Imprimir los números del 1 al 50 cada uno con su respectivo cuadrado.</h7>
+        <div class="col">
+          <button type="button" class="btn btn-outline-info" onclick="paer()"">Numeros del 1 al 50</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-outline-info" onclick="limpiar()">Limpiar</button>
+        </div>
+        <div id="mostrar">
+
+        </div>
+      </div> 
+
+      <div class="col2">
+          <h1>Ejercicio#2</h1>
+          <h7>•	Imprimir números impares del 1 la 100 y seguidamente otro con los números pares de 102 a 200.</h7>
+          <div class="col">
+            <button type="button" class="btn btn-outline-info" onclick="par()">Numeros Pares</button>
+            <button type="button" class="btn btn-outline-info" onclick="impar()">Numeros Impares</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-outline-info" onclick="limpiar2()">Limpiar</button>
+          </div>
+        <div id="consultar">
+
+        </div>
+        <div id="muestra">
+
+        </div>
+      </div>
+
+      <div class="col3">
+
+        <h1>Ejercicio#3</h1>
+        <h7>•	Imprimir números pares en forma descendente hasta 2 que son menores o iguales a un número natural dado.</h7>
+        <div class="col">
+          <input type="number" class="btn btnoutline-info" id="num20" name="num" placeholder="Ingrese el numero" onchange="acto()">
+        </div>
+
+        <div class="col">
+          <button type="button" class="btn btn-outline-info" onclick="limpiar2()">Limpiar</button>
+        </div>
+
+        <div id="respu">
+          <p id="desce"></p>
+        </div>
+        
+      </div>
+      <div class="col5">
+
+        <h1>Ejercicio#5</h1>
+        <h7>Buscar un número determinado en un arreglo y devolver su posición, si no se encuentra devolver “no se encuentra”</h7>
+        <div class="col">
+          <input type="number" class="btn btnoutline-info" id="num23" name="num" placeholder="Ingrese el numero" onchange="araay()">
+        </div>
+
+        <div class="col">
+          <button type="button" class="btn btn-outline-info" onclick="limpiar2()">Limpiar</button>
+        </div>
+
+        <div id="reser">
+          
+        </div>
+        
+      </div>
+      <div class="col6">
+
+        <h1>Ejercicio #6</h1>
+        <h7>Crear un arreglo e imprimirlo con la dimensión que asigne el usuario</h7>
+        <div class="col">
+          <input type="number" class="btn btnoutline-info" id="num24" name="arte" placeholder="Ingrese el tamaño del arreglo" onchange="">
+        </div>
+
+        <div class="col">
+          <button type="button" class="btn btn-outline-info" onclick="perde()">Imprimir</button>
+        </div>
+
+        <div id="pue">
+          
+        </div>
+      </div>
+      <div class="col7">
+        <h1>Ejercicio #7</h1>
+        <h7>Contar elementos repetidos de un arreglo e imprimirlos.</h7>
+        <div class="col">
+          <button type="button" class="btn btn-outline-info" onclick="ejert()">Imprimir</button>
+        </div>
+        <div id="eruy">
+          
+        </div>
+      </div>
+      <div class="col8">
+        <h1>Ejercicio #8</h1>
+        <h7>Convertir un número de sistema decimal a binario(mediante el uso de divisiones sucesivas)</h7>
+        <div class="col">          
+          <label for="decimal"><br>Ingrese su numero decimal para coveritr a binario</label>
+          <input type="number" id="decimal" name="decimal"><br>
+        </div>
+        <div class="col">
+          <label for="ejecutar">Resultado de la conversión</label>
+          <input type="text" id="ejecutar" name="ejecutar" readonly>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-outline-info" onclick="werever()">Convertir</button>
+        </div>  
+      </div>
+      <div class="col9">
+        <h1>Ejercicio #9</h1>
+        <h7>Convertir un binarios en decimal.</h7>
+        <div class="col">          
+          <label for="binario"><br>Ingrese su numero binario para covertir a decimal</label>
+          <input type="number" id="binario" name="binario"><br>
+        </div>
+        <div class="col">
+          <label for="ejecu">Resultado de la conversión</label>
+          <input type="text" id="ejecu" name="ejecu" readonly>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-outline-info" onclick="helio()">Convertir</button>
+        </div>  
+      </div>
+      <div class="col10">
+        <div>
+          <h1>Ejercicio #10</h1>
+          <h7>Multiplicar 2 arreglos</h7>
+        </div>
+        <div class="col">
+          <label for="mul1">Numeros del primer arreglo a ingresar</label>
+          <input type="text" id="mul1" name="mul1"><br>
+        </div>
+        <div class="col">
+          <label for="mul2">Numeros del segundo arreglo a ingresar</label>
+          <input type="text" id="mul2" name="mul2"><br>
+        </div>
+        <div class="col">
+          <label for="lerw">Resultado</label><br>
+          <input type="text" id="lerw" name="lerw" disabled><br>
+        </div>
+        <div>
+          <button type="button" class="btn btn-outline-info" onclick="multiplicararreglos()">Muliplicación</button>
+        </div>
+      </div>
+      <div class="col11">
+        <h1>Ejercicio #11</h1>
+        <div class="col">         
+          <label for="ara1"><br>Ingrese el primer arreglo</label>
+          <input type="number" id="ara1" name="ara1"><br>
+        </div>
+        <div class="col">
+          <label for="ara2">Ingrese el segundo arreglo</label>
+          <input type="text" id="ara2" name="ara2"><br>
+        </div>
+        <div class="col12">
+          <button type="button" class="btn btn-outline-info" onclick="produ()"><i class="fa fa-wheelchair-alt" aria-haiden="true"></i>Producto punto</button>
+          <p id="prow"></p>
+        </div>  
+      </div>
+      <div class="col13">
+        <h1>Ejercicio #13</h1>
+        <h7>*	Escribir un programa que muestre la suma de la serie (1*1)+(2*2)+(3*3)+(4*4)…(n*n) hasta que la suma sea menor al número digitado por el usuario. Debe mostrar la secuencia de manera ordenada.</h7>
+        <div class="col">
+          <label for="numer1">Ingresa el numero al cual desea hacerle la secuencia</label>
+          <input type="text" id="numer1" name="numer1">
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-outline-info" onclick="sumasecuencia()">Imprimir secuencia</button>
+          <p id="number6"></p>
+        </div>
+      </div>
+      <div class="col14">
+        <div>
+          <h1>Ejercicio #14</h1>
+          <h7> Transforme el siguiente for:for (a = 0, b = 0; a &lt; 7; a++, b += 2){console.log(a,b)}En su correspondiente con while.</h7>
+        </div>
+        <div>
+        <input type="text" class="esae" id="esae" name="esae" placeholder="El cambio a while es:" disabled>
+        </div>
+        <div>
+          <button type="button" class="btn btn-outline-info" onclick="cambiar()">For a while</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
